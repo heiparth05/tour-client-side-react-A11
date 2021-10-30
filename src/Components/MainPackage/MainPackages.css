@@ -1,0 +1,30 @@
+.mainPackDetails {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 1099px) {
+  .mainPackDetails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media screen and (max-width: 888px) {
+  .mainPackDetails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainPackDetails {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,28 @@
+.mainFooter2 {
+  background-color: #f9fafb;
+  margin-top: 4%;
+  padding: 3%;
+}
+.footer1 {
+  background-color: #4c8bb8;
+  color: rgb(193, 212, 230);
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 5%;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.footer3 {
+  margin-left: 6%;
+}
+.footer3 input {
+  width: 100%;
+  padding: 1%;
+}
+.iptSbt {
+  background-color: green;
+  border: none;
+  color: whitesmoke;
+}

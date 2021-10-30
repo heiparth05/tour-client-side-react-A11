@@ -1,0 +1,21 @@
+.headDetails{
+    /* border:1px solid red; */
+    width: 70%;
+    margin: auto;
+    padding: 6%;
+    background-color:#4c8bb8;
+    border-radius: 10px;
+}
+.headDetails h2 {
+    color: white;
+}
+.inputDiv .srcBox {
+    padding: 8px;
+    border: none;
+    /* background-color:red; */
+}
+.searchBtn{
+    padding:7.2px;
+    background-color:#a2d9ff;
+    border: none;
+}

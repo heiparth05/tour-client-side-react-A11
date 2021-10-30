@@ -1,0 +1,10 @@
+.resorts {
+  margin-top: 5%;
+}
+.resortsMDiv {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
