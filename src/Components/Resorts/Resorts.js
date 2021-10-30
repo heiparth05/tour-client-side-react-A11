@@ -5,10 +5,9 @@ import Resort from "./Resort";
 import "./Resorts.css";
 
 const Resorts = () => {
-
   const [resorts, setResorts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/resorts")
+    fetch("https://aqueous-plateau-82082.herokuapp.com/resorts")
       .then((res) => res.json())
       .then((data) => setResorts(data));
   }, []);

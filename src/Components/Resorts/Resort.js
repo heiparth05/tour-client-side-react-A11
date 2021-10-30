@@ -4,9 +4,9 @@ import "./Resort.css";
 const Resort = (props) => {
   const { img, resort, place, tk } = props.sentResort;
 
-  const callFBook =()=>{
-    alert("2441139 Here is our phone number")
-  }
+  const callFBook = () => {
+    alert("2441139 Here is our phone number");
+  };
   return (
     <>
       <div className="resortDiv1">
@@ -16,9 +16,12 @@ const Resort = (props) => {
           <img src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/24/000000/external-location-contact-us-flatart-icons-lineal-color-flatarticons.png" />
           &nbsp;<h6 style={{ display: "inline" }}>{place}</h6> <br />
           <img src="https://img.icons8.com/ios-glyphs/24/000000/money-bag.png" />
-          &nbsp;<h6 style={{ display: "inline", color: "green" }}>{tk}</h6> <br /> <br />
+          &nbsp;<h6 style={{ display: "inline", color: "green" }}>{tk}</h6>{" "}
+          <br /> <br />
           <center>
-            <button onClick={callFBook} className="resortBtn">Call Us For Booking</button>
+            <button onClick={callFBook} className="resortBtn">
+              Call Us For Booking
+            </button>
           </center>
         </div>
       </div>

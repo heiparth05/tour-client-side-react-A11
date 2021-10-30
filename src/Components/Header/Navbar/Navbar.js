@@ -47,8 +47,8 @@ const Navbar = () => {
               </li>
               {user?.email && (
                 <li className="nav-item">
-                  <Nav.Link as={Link} to="/location">
-                    Add A New Service
+                  <Nav.Link as={Link} to="/addNPack">
+                    Add A New Package
                   </Nav.Link>
                 </li>
               )}

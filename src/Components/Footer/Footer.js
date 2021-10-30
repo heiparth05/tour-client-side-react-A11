@@ -57,7 +57,7 @@ const Footer = () => {
               &nbsp;
             </a>
             <a href="https://www.youtube.com/" target="_blank">
-            <img src="https://img.icons8.com/bubbles/50/000000/youtube-play.png"/>
+              <img src="https://img.icons8.com/bubbles/50/000000/youtube-play.png" />
               &nbsp;
             </a>
           </div>

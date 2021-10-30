@@ -17,7 +17,7 @@ const Footer2 = () => {
             &nbsp;<h5 style={{ display: "inline" }}>contract@tourFrences.bd</h5>
           </div>
           <div className="footer3">
-            <input type="text" Placeholder="Your Name" /> <br /> <br />
+            <input type="text" placeholder="Your Name" /> <br /> <br />
             <input type="text" placeholder="Your Email" /> <br /> <br />
             <input className="iptSbt" type="submit" value="Submit" />
           </div>

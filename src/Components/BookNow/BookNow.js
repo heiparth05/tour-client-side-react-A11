@@ -93,7 +93,7 @@ const BookNow = () => {
             <b>People</b>
           </h5>
           <input type="number" /> <br /> <br />
-          <button onClick={bookNow}>Book Now</button> <br /> <br />
+          <button onClick={bookNow}>Confirm Now</button> <br /> <br />
           <h6 style={{ color: "#8dc988" }}>
             <b>
               Customer Care

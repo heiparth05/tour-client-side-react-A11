@@ -7,7 +7,7 @@ import Package from "./Package";
 const MainPackages = () => {
   const [packages, setPackages] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/packages")
+    fetch("https://aqueous-plateau-82082.herokuapp.com/packages")
       .then((res) => res.json())
       .then((data) => setPackages(data));
   }, []);
@@ -22,7 +22,7 @@ const MainPackages = () => {
       </div>
       <div className="mainPackDetails">
         {packages.map((pack) => (
-          <Package sentPack={pack}></Package>
+          <Package key={pack._id} sentPack={pack}></Package>
         ))}
       </div>
     </>

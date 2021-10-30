@@ -1,13 +1,10 @@
-.navBar{
-    /* position: sticky;
-    top: 0; */
-    background-color:#ffffff;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.navBar {
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .navbar-collapse ul li {
   margin: 13px;
 }
-
 .logo {
   width: 5%;
   margin-right: 10%;

@@ -1,0 +1,19 @@
+.reactFormDiv {
+  width: 100%;
+  margin: auto;
+}
+.reactForm {
+  width: 100%;
+  margin: auto;
+}
+.reactForm input {
+  border: 1px solid rgb(194, 184, 184);
+  width: 40%;
+  margin-left: 31%;
+  margin-bottom: 1%;
+  padding: 0.4%;
+}
+.reactFSub {
+  background-color: #067dc2;
+  color: azure;
+}

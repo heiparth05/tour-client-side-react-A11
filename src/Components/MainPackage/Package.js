@@ -21,9 +21,9 @@ const Package = (props) => {
               <button
                 style={{ textAlign: "center" }}
                 type="button"
-                class="btn btn-outline-secondary"
+                className="btn btn-outline-secondary"
               >
-                Details
+                Details For Booking
               </button>
             </Nav.Link>
           </center>
