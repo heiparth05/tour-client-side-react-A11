@@ -1,9 +1,25 @@
 import React from "react";
+import swal from "sweetalert";
 import "./BookNow.css";
 
 const BookNow = () => {
   const bookNow = () => {
-    alert("Thanks for Booking");
+
+    swal({
+      title: "Are you sure?",
+      text: "You Want To Confirm This?",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        swal("Good job! You booked this package successfully.", {
+          icon: "success",
+        });
+      } else {
+        swal("Ki ache jibone book kore dan!");
+      }
+    });
   };
   return (
     <>
@@ -84,7 +100,7 @@ const BookNow = () => {
           </p>
         </div>
         <div className="bookNow2">
-          <h4>Want To Purchase?</h4> <br />
+         <h4>Want To Purchase?</h4> <br />
           <h5>
             <b>Date</b>
           </h5>

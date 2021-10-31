@@ -5,6 +5,12 @@
 .navbar-collapse ul li {
   margin: 13px;
 }
+.nav-item a:hover {
+  color: red;
+  transition: 0.3s;
+  transform: scale(1.1);
+  transition-timing-function: ease-in-out;
+}
 .logo {
   width: 5%;
   margin-right: 10%;

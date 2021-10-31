@@ -8,7 +8,9 @@ const AuthProvider = (props) => {
   const contextAll = useFirebase();
   /* Here i am using auth context */
   return (
-    <AuthContext.Provider value={contextAll}>{children}</AuthContext.Provider>
+    <AuthContext.Provider value={contextAll}>
+      {children}
+    </AuthContext.Provider>
   );
 };
 

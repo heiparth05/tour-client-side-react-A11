@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Header/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import LogIn from "./Components/LogIn/LogIn";
+import ManageAllOrders from "./Components/ManageAllOrder/ManageAllOrders";
 import MyOrder from "./Components/MyOrder/MyOrder";
 import Resorts from "./Components/Resorts/Resorts";
 import AuthProvider from "./Components/UseFirebase/AuthProvider";
@@ -30,6 +31,9 @@ function App() {
               </Route>
               <Route path="/login">
                 <LogIn></LogIn>
+              </Route>
+              <Route path="/manageAllOrder">
+                <ManageAllOrders></ManageAllOrders>
               </Route>
               <Route path="/myOrder">
                 <MyOrder></MyOrder>

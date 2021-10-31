@@ -31,11 +31,6 @@ const Navbar = () => {
                 </Nav.Link>
               </li>
               <li className="nav-item">
-                <Nav.Link as={Link} to="/packages">
-                  Packages
-                </Nav.Link>
-              </li>
-              <li className="nav-item">
                 <Nav.Link as={Link} to="/event">
                   Event
                 </Nav.Link>
@@ -45,6 +40,13 @@ const Navbar = () => {
                   Resort
                 </Nav.Link>
               </li>
+              {user?.email && (
+                <li className="nav-item">
+                  <Nav.Link as={Link} to="/manageAllOrder">
+                    Manage All Order
+                  </Nav.Link>
+                </li>
+              )}
               {user?.email && (
                 <li className="nav-item">
                   <Nav.Link as={Link} to="/addNPack">

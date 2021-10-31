@@ -42,3 +42,9 @@
   background-color: #067dc2;
   color: aliceblue;
 }
+
+@media screen and (max-width: 1099px) {
+  .bookNow2 {
+    width: 50%;
+  }
+}

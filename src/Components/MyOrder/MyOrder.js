@@ -1,7 +1,8 @@
 import React from "react";
-import "./MyOrder";
+// import swal from "sweetalert";
 
 const MyOrder = () => {
+
   return (
     <>
       <div>
@@ -13,7 +14,6 @@ const MyOrder = () => {
           </h4>
         </center>
       </div>
-      <div></div>
     </>
   );
 };

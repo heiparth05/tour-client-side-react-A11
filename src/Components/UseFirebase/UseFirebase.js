@@ -14,6 +14,7 @@ initAuth();
 const useFirebase = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
 
   const auth = getAuth();
 
@@ -21,32 +22,48 @@ const useFirebase = () => {
 
   /* for google sign in */
   const googleSignIn = () => {
+    setLoading(true);
+
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         console.log(result, user);
         setUser(result.user);
       })
-      .catch((error) => {
-        setError(error.message);
+
+      .finally(() => {
+        setLoading(false);
       });
+
+    // .catch((error) => {
+    //   setError(error.message);
+    // });
   };
 
   /* for logOut */
   const logOut = () => {
-    signOut(auth).then(() => {
-      setUser({});
-    });
+    setLoading(true);
+    signOut(auth)
+      .then(() => {
+        setUser({});
+      })
+
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
+      } else {
+        setUser({});
       }
+      setLoading(false);
     });
   }, [auth]);
 
-  return { user, error, googleSignIn, logOut };
+  return { user, error, googleSignIn, logOut,loading };
 };
 
 export default useFirebase;

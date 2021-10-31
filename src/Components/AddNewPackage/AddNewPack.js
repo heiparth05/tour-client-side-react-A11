@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
+import swal from "sweetalert";
 import "./AddNewPack.css";
 
 const AddNewPack = () => {
@@ -11,7 +12,7 @@ const AddNewPack = () => {
       .post("https://aqueous-plateau-82082.herokuapp.com/packages", data)
       .then((res) => {
         if (res.data.insertedId) {
-          alert("Successfully Added New Service");
+          swal("Good job!", "Successfully Added New Service!", "success");
           reset();
         }
       });

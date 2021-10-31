@@ -1,11 +1,12 @@
 import React from "react";
+import swal from "sweetalert";
 import "./Resort.css";
 
 const Resort = (props) => {
   const { img, resort, place, tk } = props.sentResort;
 
   const callFBook = () => {
-    alert("2441139 Here is our phone number");
+    swal(" ''2441139'' Here is our phone number!");
   };
   return (
     <>
