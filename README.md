@@ -1,5 +1,4 @@
 # Welcome to "Lets Travelling" Website
-### Here is the live site of my website [https://tour-assignment-11.web.app](https://tour-assignment-11.web.app)
 
 ### Why you choose us 
 01.It saves your time and money <br/>
